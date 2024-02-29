@@ -3,7 +3,7 @@
 *{
     margin: 0;padding: 0;
     box-sizing:border-box;
-	font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .bgColor {
     background: #FFFF00 !important;
@@ -26,7 +26,6 @@
     height: 100% !important;
 }
 .MainSection {
-    width: 100%;
     height: 50vh;
     justify-content: center;
     align-items: center;
@@ -98,6 +97,12 @@
     height:500px ;
     width:100%;
 }
-.footerSize{
-    height:200px;
+
+@media(max-width998px){
+    
+}
+
+
+@media(max-width:728px){
+
 }
