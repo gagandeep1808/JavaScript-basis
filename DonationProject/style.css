@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+.headerText {
+    background-color: #dc3545;
+    font-size: 22px ;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius:5px;
+    padding:8px 0px;
+}
+button:hover{
+    color:darkred;
+}
+.linewidth {
+    width: 200px;
+    color: #dc3545;
+}
+.linewidth1{
+    width: 100px ;
+}
+.educational{
+    background-image:  linear-gradient(rgba(187, 79, 65, 0.7), rgba(241, 122, 86, 0.7)),url(assets/images/img1.jpg);
+    opacity:1;
+    min-height:70vh;
+    background-attachment:fixed !important;
+    object-fit:cover;
+    background-position:center;
+    background-size:cover;
+    margin: 1rem 0rem;
+    padding: 2rem 0rem;
+}
+
+.card img {
+    height: 300px !important;
+    object-fit:cover;
+}
+.eduCard{
+    padding: 1rem;
+    background-color: rgb(255, 238, 238);
+}
+.eduCard{
+    padding: 1rem;
+    background-color: rgb(255, 238, 238);
+}
+
+@media(max-width998px){
+	.passage{
+        font-size: 12px;
+    }
+    .eduCard{
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media(max-width:728px){
+    .passage{
+        font-size: 12px;
+    }
+    .eduCard{
+        margin-bottom: 1rem;
+    }
+
+}

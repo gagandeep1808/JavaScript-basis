@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Org</title>
+    <link rel="icon" href="assets/images/favIcon.png">
+    <link href="https://unpkg.com/aosc@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="assets/Scripts/modernizr-2.8.3.js"></script>
+    <style>
+        .carousel-item img {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .imgAbout {
+            border-radius: 10px;
+        }
+
+        .CardSection {
+            min-height: 50vh;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-danger py-2">
+        <div class="container row text-center">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <i class="fa-solid fa-phone text-white"></i>
+                <strong class="text-white"> Call Us for Enquiry : <br>(+91) 1800-1234-1234</strong>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <i class="fa-solid fa-mail-forward text-white"></i>
+                <strong class="text-white">Mail Us for Enquiry : <br> support@charity.com</strong>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            <div class="col-sm-12 col-md-2 col-lg-2 d-block">
+                <a href="#"><i class="fa-brands fa-facebook text-white px-1"></i>
+                <a href="#"><i class="fa-brands fa-instagram text-white px-1"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-white px-1"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-white px-1"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin text-white px-1"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-white px-4 border-bottom sticky-top bg-white Nav-shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" href="#">CHARITY <span class="text-danger">Logo</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fs-6" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="#SocialWelfare">Social Welfare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="#OurTeam">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fs-6" aria-current="page" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn rounded-5 bg-danger text-white fw-bold fs-6" aria-current="page" href="#Contact">Donate Now</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+    
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/images/img1.jpg" class="d-block w-100 img-fluid object-fit-cover" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption  d-md-block">
+                        <div class="headerText">Volunteer Management</div>
+                        <p class="passage">our contribution matters. Whether through donations, volunteering, or spreading awareness, you can be a part of the solution to end hunger. Together, we can make a difference.</p>
+                        <button class="btn rounded-5 bg-danger text-white fw-bold fs-6" aria-current="page" href="#Contact">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/img2.jpg" class="d-block w-100 img-fluid object-fit-cover" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption  d-md-block">
+                        <div class="headerText">How You Can Help</div>
+                        <p class="passage">our contribution matters. Whether through donations, volunteering, or spreading awareness, you can be a part of the solution to end hunger. Together, we can make a difference.</p>
+                        <button class="btn rounded-5 bg-danger text-white fw-bold fs-6" aria-current="page" href="#Contact">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/images/img3.jpg" class="d-block w-100 img-fluid object-fit-cover" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption  d-md-block">
+                        <div class="headerText">
+                            How You Can Help
+                        </div>
+                        <p class="passage">our contribution matters. Whether through donations, volunteering, or spreading awareness, you can be a part of the solution to end hunger. Together, we can make a difference.</p>
+                        <button class="btn rounded-5 bg-danger text-white fw-bold fs-6" aria-current="page" href="#Contact">Donate Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="about my-5">
+        <div class="container">
+            <div class="text-center my-5" id="aboutus">
+                <h1>
+                    About <span class="text-danger">Us</span>
+                    <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                    <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6" data-aos="zoom-in" data-aos-offset="200">
+                    <h1 class="text-danger p-2 ">Mission statement</h1>
+                    <p class="p-2">At [Company Name], we strive to make the world a better place by providing support and assistance to those in need. We believe that every person deserves a chance to live a fulfilling life, and we work tirelessly to make that a reality. Our fundraising campaigns, volunteer management, and community outreach programs are tailored to meet the unique needs of each beneficiary. We are committed to transparency, accountability, and excellence in everything we do.</p>
+                    <button type="button" class="btn btn-light mb-5">More About Us</button>
+                    <div class="accordion" id="accordionExample" data-aos="zoom-in-left" data-aos-offset="200">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong class="text-danger">Impactful Imagery</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Join us in making a difference! Our dedicated volunteers are at the heart of our mission, ensuring no one goes to bed hungry.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong class="text-danger">Global Impact</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>While our roots are local, our impact is global. With your support, we extend our reach to communities around the world, addressing the challenges of food insecurity on a larger scale.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong class="text-danger"> Join the Movement</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Ready to be a force for change? Join us in our mission to create a world where no one has to worry about their next meal. Together, we can build a future without hunger.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-3 p-3 text-end" data-aos="fade-right" data-aos-offset="200">
+                    <img src="assets/images/img4.jpg" class="img-fluid object-fit-cover imgAbout" />
+                </div>
+            </div>
+    </section>
+    <!-- ****************************Educational wing****************************** -->
+    <section class="container-fluid ">
+        <div class="text-center">
+            <h1 data-aos="fade-right" data-aos-offset="200">
+                Educational <span class="text-danger">Wing</span>
+                <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+            </h1>
+        </div>
+    </section>
+    <div class="container-fluid educational" data-aos="zoom-in" data-aos-offset="200">
+        <div class="row container text-center m-auto">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card border-0  align-items-center eduCard">
+                    <img src="assets/images/computer.jpg" class="card-img-top img-fluid  rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-4 py-2 bg-danger rounded-2">Computer Education</h5>
+                        <p class="card-text">Our community outreach programs are tailored to the unique needs of each community, ensuring that they are effective and impactful.</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card border-0 align-items-center eduCard">
+                    <img src="assets/images/skill.jpg" class="card-img-top rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-4 py-2 bg-danger rounded-2">Skill Development</h5>
+                        <p class="card-text">Our community outreach programs are tailored to the unique needs of each community, ensuring that they are effective and impactful.</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card  border-0 align-items-center eduCard">
+                    <img src="assets/images/img4.jpg" class="card-img-top rounded-2" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white fs-4 py-2 bg-danger rounded-2">Skill development</h5>
+                        <p class="card-text ">Our community outreach programs are tailored to the unique needs of each community, ensuring that they are effective and impactful.</p>
+                        <a href="#" class="btn btn-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ****************************Events wing****************************** -->
+    <section class="Events py-5 " id="Events">
+        <div class="container">
+            <div class="text-center">
+                <h1 data-aos="fade-right" data-aos-offset="200">
+                     <span class="text-danger">Events</span>
+                    <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                    <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                </h1>
+            </div>
+            <div class="row ServicesRow" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection text-center ">
+                        <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body m-auto">
+                            <i class="fa fa-calendar text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <i class="fa fa-clock-o text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <h5 class="card-title text-black fs-5">Medical Support</h5>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection text-center ">
+                        <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body m-auto">
+                            <i class="fa fa-calendar text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <i class="fa fa-clock-o text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <h5 class="card-title text-black fs-5">Medical Support</h5>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection text-center">
+                        <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <i class="fa fa-calendar text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <i class="fa fa-clock-o text-danger p-2"></i>  <span class="card-text">Our community</span>
+                            <h5 class="card-title text-black fs-5">Medical Support</h5>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****************************SocialWelfare wing****************************** -->
+    <section class="SocialWelfare py-5 bg-light" id="SocialWelfare">
+        <div class="container">
+            <div class="text-center">
+                <h1 data-aos="fade-right" data-aos-offset="200">
+                    Social <span class="text-danger">Welfare</span>
+                    <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                    <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                </h1>
+            </div>
+            <div class="row ServicesRow" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection">
+                        <img src="assets/images/donation.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Medical Support</h5>
+                            <p class="card-text">Our community outreach programs are tailored to the unique needs of each community, ensuring that they are effective and impactful.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection">
+                        <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Food,Clothing Support</h5>
+                            <p class="card-text">Our community outreach programs are tailored to the unique needs of each community, ensuring that they are effective and impactful.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5">
+                    <div class="card CardSection">
+                        <img src="assets/images/img4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Volunteer Management</h5>
+                            <p class="card-text">We use data-driven strategies to match volunteers with roles that align with their skills and interests, ensuring that they are engaged and motivated.</p>
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****************************team wing****************************** -->
+    <section class="team my-5 text-center" id="OurTeam">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 data-aos="fade-right" data-aos-offset="200">
+                    Our <span class="text-danger">Team</span>
+                    <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                    <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                </h1>
+            </div>
+            <div class="row TeamRow" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5 CardSection ">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/images/john.jpg" class="img-fluid object-fit-cover rounded-circle border border-danger p-2 w-100 " alt="...">
+                            <h5 class="card-title text-danger mt-4">John</h5>
+                            <p class="card-text">Founder & CEO</p>
+                            <a href="#" class="btn btn-danger">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5 CardSection ">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/images/john.jpg" class="img-fluid object-fit-cover rounded-circle border border-danger p-2 w-100 " alt="...">
+                            <h5 class="card-title text-danger mt-4">John</h5>
+                            <p class="card-text">Founder & CEO</p>
+                            <a href="#" class="btn btn-danger">View More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 mt-5 CardSection ">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="assets/images/john.jpg" class="img-fluid object-fit-cover rounded-circle border border-danger p-2 w-100 " alt="...">
+                            <h5 class="card-title text-danger mt-4">John</h5>
+                            <p class="card-text">Founder & CEO</p>
+                            <a href="#" class="btn btn-danger">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****************************Contact wing****************************** -->
+    <section class="ContactForm my-3 p-4 bg-light" id="Contact">
+        <div class="container">
+            <div class="text-center">
+                <h1 data-aos="fade-right" data-aos-offset="200">
+                    Contact <span class="text-danger">Us</span>
+                    <hr class="linewidth m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                    <hr class="linewidth1 m-auto mt-3" data-aos="fade-up" data-aos-offset="200" />
+                </h1>
+            </div>
+            <div class="row" data-aos="zoom-in" data-aos-offset="200">
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-2 ">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-danger">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-5 d-none d-sm-block" data-aos="fade-right" data-aos-offset="200">
+                    <img src="assets/images/img4.jpg" class="img-fluid imgAbout" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="Services py-5 bg-danger">
+            <div class="container">
+                <div class="text-center">
+                    <span class="fs-6 text-white">© 2024 - Home Of Charity</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
