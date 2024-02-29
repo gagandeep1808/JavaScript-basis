@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;padding: 0;
+    box-sizing:border-box;
+	font-family: "Poppins", sans-serif;
+}
+.bgColor {
+    background: #FFFF00 !important;
+}
+.txtColor {
+    color: #FFFF00;
+}
+.bgNavy {
+    background: #000080 !important;
+}
+.txtNavy {
+    color: #000080 !important;
+}
+.logoImg{
+    width:300px !important;
+    height:80px!important;
+}
+.sgpcLogo {
+    width: 350px !important;
+    height: 100% !important;
+}
+.MainSection {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.carousel-item {
+    background-color: red;
+    width: 100%;
+    height: 60vh!important;
+}
+.alignCenter{
+    justify-content:center!important;
+    align-items:center!important;
+}
+.linewidth {
+    width: 200px;
+    color: #000080;
+}
+
+.linewidth1 {
+    width: 100px;
+    color: #000080;
+}
+.Cardweb{
+    height:350px;
+}
+.CardSection {
+    height: 350px;
+}
+.webImg {
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+}
+.divImg {
+    width: 150px;
+    height: 120px;
+    padding: 10px;
+}
+.CardSection{
+    height:250px !important;
+}
+.Dashline {
+    width: 100%;
+    color: #000080;
+}
+.ContentImg {
+    width: 150px !important;
+    height: 120px !important;
+    padding: 10px;
+}
+.textRight{
+    text-align:right !important;
+}
+.NameHead {
+    bottom: 200px !important;
+    font-weight: 400 !important;
+    font-size: 25px !important;
+}
+.headImg {
+    width: 100% !important;
+    height: 400px !important;
+    object-fit:cover;
+}
+.shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ImgContainer{
+    height:500px ;
+    width:100%;
+}
+.footerSize{
+    height:200px;
+}
