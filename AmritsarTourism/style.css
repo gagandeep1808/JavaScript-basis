@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0;padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
@@ -22,6 +21,7 @@ a{
     --XsmallText:  0.8rem;
     --mediumText: 1.3rem;
     --BigText: 4rem;
+    --phoneText:3rem;
 }
 .XsmallText {
     font-size: var(--XsmallText);
@@ -38,15 +38,15 @@ a{
 .MainBtn{
      background-color:var(--black);
      color:white;
-     font-weight:600;
-     width:8rem;
+     font-weight:400;
+     width:9rem;
+     font-size: var(--smallText);
      border-radius:.2rem;
      text-align:center;
-     padding:.3rem 1rem;
+     padding:.1rem;
 
  }
-
-/****************************hero Slider*******************************/
+ /****************************hero Slider*******************************/
 .slide {
     box-shadow: 0px 25px 20px -20px rgba(0,0,0,0.45);
 }
@@ -65,7 +65,7 @@ a{
     flex-direction:column;
     padding:3rem;
     width: 50%;
-    background-color: red;
+    /* background-color: red; */
 }
 .SlideContent span {
     font-size: var(--smallText);
@@ -87,9 +87,12 @@ a{
     align-content: center;
     padding: 1rem;
 }
+
 /****************************Services Slide*******************************/
 .Services{
     margin-top:2rem;
+    display: flex;
+    flex-direction: row;
 }
 .Cardweb{
     height:18rem;
@@ -114,17 +117,59 @@ a{
 }
 .destination-Content h5 {
     background-color: var(--black);
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight:700;
     padding: .3rem 1rem;
     border-radius:0.2rem;
-    margin-bottom:2rem !important;
 }
-@media(max-width998px) {
-    /* html {
-            font-size: 75%;
-        } */
+.destination-Content p{
+margin-top: 1rem;
+}
+/****************************Gallery Slide*******************************/
 
+ .Gallery{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 15rem;
+    gap: 0.5rem;
+    padding:1rem 0;
+}
+.Gallery .box  {
+    background-position: top;
+    object-fit: cover;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: .3rem;
+}
+.Gallery .box:hover  {
+   box-shadow: 0  0 1rem #192a56;
+}
+
+.row-span{
+    grid-row: span 2;
+}
+.col-span{
+    grid-column: span 2;
+
+} 
+/****************************hotel Slide*******************************/
+.WelcomeImg{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width998px) {
+    html,body {
+            font-size: 75%;
+        } 
+        .MainBtn{
+            padding:.4rem .1rem;
+       
+        }
         
         .heroSlide{
             flex-direction: column;
@@ -140,6 +185,14 @@ a{
         .ImgConatier {
             padding: 0rem;
         }
+        /* .SlideContent span {
+            font-size: var(--sText);
+            color:var(--green)
+        } */
+            .SlideContent h3 {
+                font-size: var(--phoneText);
+              
+            }
         /******************services*********************/
         .Cardweb {
             height: 15rem;
@@ -147,20 +200,32 @@ a{
         }
     /****************************Services Slide*******************************/
     .destination-Container {
-        height: 30rem;
+        height: 33rem;
     }
     .destination-card img {
         height: 20rem;
     }
-   
+    /****************************Gallary Slide*******************************/
+    .Gallery{
+      
+        grid-auto-rows: 18rem;
+       
+    }
+    .Gallery .box{
+        grid-row: span 1;
+        grid-column: span 4;
+     }
     }
 
 
     @media(max-width:728px) {
-        /* html {
-            font-size: 65%;
-        } */
-
+        html,body {
+            font-size: 90%;
+        } 
+        .MainBtn{
+            padding:.4rem .1rem;
+       
+        }
        
         .SlideContent{
           
@@ -172,15 +237,28 @@ a{
         .ImgConatier {
             padding: 0rem;
         }
+        /* .SlideContent span {
+            font-size: var(--smallText);
+            color:var(--green)
+        } */
+        .SlideContent h3 {
+            font-size: var(--phoneText);
+          
+        }
         /******************services*********************/
         .Cardweb {
             height: 15rem;
         }
-        /****************************Services Slide*******************************/
+       /****************************Services Slide*******************************/
         .destination-Container {
-            height: 30rem;
-        }
+            height: 33rem;
+            }
         .destination-card img {
-            height: 20rem;
+             height: 20rem;
         }
+    /****************************Gallary Slide*******************************/
+    .Gallery .box{
+        grid-row: span 1;
+        grid-column: span 4;
+     }
     }
