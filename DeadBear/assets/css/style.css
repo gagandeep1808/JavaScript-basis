@@ -97,7 +97,7 @@
         background-color:var(--second-color);
     }
     .nav{
-        background-image: url(/assets/images/hero.jpeg);
+        background-color: red;
         height: 80vh;
     }
     .header{
