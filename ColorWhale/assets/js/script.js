@@ -1,83 +1,78 @@
+const Header = document.getElementById("mainNavbar");
+const logo = document.getElementById("logo");
+const Links = document.getElementsByClassName('nav__links');
 
-//=========================== Home Slider =====================
-var swiper = new Swiper(".main", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-   loop:true,
-  });
-  
-  //=========================== Nav Menu  =====================
-  
-  const navMenu = document.getElementById('nav-menu');
-        navToggle = document.getElementById('nav-toggle');
-        navClose = document.getElementById('nav-close')
-  
-        if(navToggle){
-          navToggle.addEventListener('click',()=>{
-            navMenu.classList.add('show-menu')
-          });
-        }
-        if(navClose){
-          navClose.addEventListener('click',()=>{
-            navMenu.classList.remove('show-menu')
-          });
-        }
-  
-  //=========================== Category =====================
-  var swiperCategories = new Swiper(".categories__container", {
-      spaceBetween: 24,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        350: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-        },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1200: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-          },
-          1400: {
-            slidesPerView: 6,
-            spaceBetween: 50,
-          },
+Header.addEventListener("mouseenter", (event) => {
+    logo.classList.remove('logo__name')
+    logo.classList.add('hover__logo');
+});
+Header.addEventListener("mouseleave", (event) => {
+    logo.classList.remove('hover__logo');
+    logo.classList.add('logo__name');
+});
+
+//=========================== Nav Menu  =====================
+
+const navMenu = document.getElementById('nav_list');
+      navToggle = document.getElementById('nav-toggle');
+      navClose = document.getElementById('nav-close');
+
+      if(navToggle){
+        navToggle.addEventListener('click',()=>{
+          navMenu.classList.add('show-menu')
+        });
       }
-    });
-  //=========================== product  =====================
-  const tabs = document.querySelectorAll('[data-target]');
-    tabContents = document.querySelectorAll('[content]');
-  
-    tabs.forEach(tab => {
-      tab.addEventListener('click',()=>{
-        const target = document.querySelector(tab.dataset.target)
-         tabContents.forEach(tabContent => {
-          tabContent.classList.remove('active-tab');
-         });
-         target.classList.add('active-tab');
-  
-         tabs.forEach(tab => {
-          tab.classList.remove('active-tab')
-         });
-         tab.classList.add('active-tab')
-      });
-    });
-  
+      if(navClose){
+        navClose.addEventListener('click',()=>{
+          navMenu.classList.remove('show-menu')
+        });
+      }
+
+      //=========================== cart Menu  =====================
+
+const cartMenu = document.getElementById('Cart__Container');
+cartToggle = document.getElementById('cart-toggle');
+cartClose = document.getElementById('cart-close');
+
+if(cartToggle){
+  cartToggle.addEventListener('click',()=>{
+    cartMenu.classList.add('showCart__Menu')
+  });
+}
+if(cartClose){
+  cartClose.addEventListener('click',()=>{
+    cartMenu.classList.remove('showCart__Menu')
+  });
+}
+      //=========================== Search Box  =====================
+
+      const SearchBox = document.getElementById('searchBox');
+      SearchToggle = document.getElementById('Search-Toggle');
+      SearchClose = document.getElementById('Search-close');
+      
+      if(SearchToggle){
+        SearchToggle.addEventListener('click',()=>{
+          SearchBox.classList.add('DisplaySearch')
+        });
+      }
+      if(SearchClose){
+        SearchClose.addEventListener('click',()=>{
+          SearchBox.classList.remove('DisplaySearch')
+        });
+      }
+
+      function changebg(){
+        var navbar = document.getElementById('mainNavbar');
+        var Logo = document.getElementById('logo');
+        var ScrollValue = window.scrollY;
+        if(ScrollValue < 150){
+             navbar.classList.remove('ScrollColor');
+             Logo.classList.remove('LogoScroll');
+         } 
+          else{
+           navbar.classList.add('ScrollColor');
+           Logo.classList.add('LogoScroll');
+        }
+      }
+      
+      window.addEventListener('scroll', changebg);
