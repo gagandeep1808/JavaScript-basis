@@ -1,0 +1,230 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="adds container ">
+        new offers
+    </div> 
+    <div class="searchBox" id="searchBox">
+            <div class="searchContainer">
+                <div class="header__search">
+                    <input type="text" placeholder="Search For Items..." class="InputBox">
+                    <button class="search__btn">
+                        <img src="assets/images/search.png" alt="" style="width: 2rem;">
+                    </button>
+                </div>
+                <i class="fa-solid fa-xmark" style="color: black; margin-left: 0.8rem; width: 50px;" id="Search-close" ></i>
+            </div>        
+    </div>
+    <section class="nav container">
+        <img src="/assets/images/hero_img.png" class="hero__img" />
+        <video src="assets/images/video/reel 1.mp4" class="mobile__img" muted autoplay loop></video>
+
+        <!-- <img src="/assets/images/mobile.png" class="mobile__img" /> -->
+        <div class="header HDColor" id="mainNavbar">
+            <div class="nav__menu" id="nav-menu">
+                <div id="nav-toggle">
+                    <img src="assets/images/menu-burger.svg" alt="" class="burger__img">
+                </div>
+                <ul class="nav__list" id="nav_list">
+                    <div class="nav__close" id="nav-close">
+                        <i class="fa-solid fa-xmark" style="color: black;"></i>
+                    </div>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__links nav__link active-link">New Drops</a>
+
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__links nav__link">Tops <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>
+                        <ul class="dropdown">
+                            <li>TSHIRTS</li>
+                            <li>SHIRTS</li>
+                            <li>HODDIES</li>
+                            <li>SWEATSHIRTS</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Catagories.html" class="nav__links nav__link">Bottoms <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>
+                        <ul class="dropdown">
+                            <li>SHORTS</li>
+                            <li>CARGO</li>
+                            <li>JOGGERS</li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="Account.html" class="nav__links nav__link">Babywear <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></a>
+                        <ul class="dropdown">
+                            <li>TSHIRTS</li>
+                            <li>HODDIES</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__logo">
+                <span class="logo__name LogoColor" id="logo">
+                    COLORWHALE
+                </span>
+            </div>
+            <div class="nav__actions">
+                <span class="nav__action-btn" id="Search-Toggle">
+                    <img src="/assets/images/search.png" alt="" >
+                   
+                </span>
+             
+                <a href="wishlist.html" class="nav__action-btn userBtn" >
+                    <img src="/assets/images/user.png" alt="">
+                  
+                </a>
+                <a href="#" class="nav__action-btn" >
+                    <img src="/assets/images/icon-cart.svg" alt="" id="cart-toggle">
+                    <span class="count">
+                        3
+                    </span>
+                </a>
+                <div class="cart__Menu" id="Cart__Container">
+                    <ul class="cart__list" id="cart_list">
+                        <div class="cart__close" id="cart-close" style="justify-content: space-between; display:flex;">
+                            <span class="product__heading" data-target="#Featured">Your Cart</span>
+                            <i class="fa-solid fa-xmark" style="color: black; font-size: 2rem; margin-right: 1rem;" ></i>
+                        </div>
+                        <li class="cart__item">
+                            <div class="cart__product">
+                                <img src="assets/images/product-1-1.jpg" alt="" class="cartProduct__img">
+                                <div class="cart__content">
+                                    <span class="cart_content__h">Black T-Shirts</span><br>
+                                    <span class="cart_prize__h">Rs.1000/-</span><br>
+                                    <span class="cart_prize__h">Size</span>
+
+                                </div>
+                                <div class="TotalPrize">
+                                    <span class="cart_content__h">Black T-Shirts</span><br>
+
+                                </div>
+                                
+
+
+                            </div>
+    
+                        </li>
+                        <li class="cart__item">
+                            <div class="cart__product">
+                                <img src="assets/images/product-1-1.jpg" alt="" class="cartProduct__img">
+                                <div class="cart__content">
+                                    <span class="cart_content__h">Black T-Shirts</span><br>
+                                    <span class="cart_prize__h">Rs.1000/-</span>
+                                    <span class="cart_prize__h">Size</span>
+
+                                </div>
+
+                            </div>
+    
+                        </li>
+                      
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+  <!--************************* PRODUCTS******************* -->
+  <section class="products section__lg container">
+      <span class="product__heading" data-target="#Featured">FEATURED COLLECTION</span>
+        <div class="product__container">
+            <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item1_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item1_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item2_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item2_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item3_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item3_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item4_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item4_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item5_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item5_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item6_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item6_1.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+             <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item7_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item7_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+            <div class="product__item">
+                <a href="details.html" class="product__images">
+                    <img src="assets/images/item8_1.jpg" alt="" class="product__img default">
+                    <img src="assets/images/item8_2.jpg" alt="" class="product__img hover">
+                </a>
+                <div class="product__content">
+                    <span class="content__h">Black T-Shirts</span><br>
+                    <span class="prize__h">Rs.1000/-</span>
+                </div>      
+             </div>
+        </div>
+            
+    </section> 
+<script src="/assets/js/script.js"></script>
+</body>
+</html>
